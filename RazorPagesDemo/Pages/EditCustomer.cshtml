@@ -1,0 +1,47 @@
+﻿@page "{id:int}"
+@using RazorPagesDemo.Models
+@model EditCustomerModel
+
+<div class="container">
+    <h3>Edit Customer</h3>
+    <hr />
+    <br />
+    <form method="post">
+        <input asp-for="Customer.CustomerID" type="hidden" />
+        <div class="row">
+            <div class="col-md-4">
+                <label asp-for="Customer.Name"></label>
+                <input asp-for="Customer.Name" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label asp-for="Customer.Address"></label>
+                <input asp-for="Customer.Address" class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <label asp-for="Customer.Country"></label>
+                <input asp-for="Customer.Country" class="form-control" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <label asp-for="Customer.City"></label>
+                <input asp-for="Customer.City" cl class="form-control" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <label asp-for="Customer.Phoneno"></label>
+                <input asp-for="Customer.Phoneno" class="form-control" />
+            </div>
+        </div>
+        <br />
+        <input type="submit" value="Save" class="btn btn-primary" />
+        <a class="btn btn-default" href="/allcustomer">Cancel</a>
+    </form>
+</div>  
